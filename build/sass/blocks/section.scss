@@ -7,22 +7,6 @@
     max-width: 350px;
   }
 
-  &__white-semicircle {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNzUiIGhlaWdodD0iNDAuMDY3IiB2aWV3Qm94PSIwIDAgMzc1IDQwLjA2NyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0wLDMuMjkxczkwLjE2LTI3LjIsMTgzLjkxLTI3LjJTMzc1LTIuMTg3LDM3NS0yLjE4N1YxNi4xNTZIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMjMuOTExKSIvPjwvc3ZnPg==);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    height: 42px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-
-    @include media(">sm") {
-      height: 80px;
-    }
-  }
-
   &__partners-images {
     align-items: center;
     display: flex;
