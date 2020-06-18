@@ -5,123 +5,29 @@ block vars
   - var pageDescription = 'desc'
   - var pageKeywords = 'keys words'
   - var page = "Carmazon.ca"
-  - var headerTheme = ""
+  - var headerTheme = "dark-theme"
 
 block content
   .main-wrapper.pos-relative
     include blocks/header 
-
-    amp-state(id="carSelect")
-      script(type="application/json").
-        {
-          "year": "",
-          "brand": "22",
-          "model": "",
-          "selectYear": false,
-          "selectBrand": false
-        }      
+ 
 
 
-    +b.SECTION.section._image._image-infographics.pos-relative
-      +e.SPAN.white-semicircle
-
-
-    +b.SECTION.section._video._video-up.pos-relative
+    +b.SECTION.section._infographic._bg-blue
       .container.container_lg
-        +e.H1.title-page.text-align-c Introducing the future of car buying
-        +youtube-box({video: {videoId:"lBTCB7yLs8Y", src:"video/final-promo"}, image: {src:"img/youtube-placeholder.png", alt: "Carmazon promo video"}})
+        +section-header({info: {title:"We convert ideas to revenues"}})._float-left._margin-b-sm.text-align-l
+          p PublicZilla is on a mission to support talented creators to bring value to society in North America,through purpose-driven solutions that bring innovation, help spur growth for entrepreneursand disrupt their respective industry.
+    
+    +b.SECTION.section._infographic
+      .container.container_bt
+        +btn({info:{type: "link", data: "post-1.html", text: "1 - Crash Testing the Market"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "post-1.html", text: "2 - Developing the MVP"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "post-1.html", text: "3 - Soft Launch to Secure Funding"}})._primary-color._margin_b_top
 
-    +b.SECTION.section._find-car._margin-b-md
-      .container.container_lg.text-align-c.section_margin-b-md
-        button.btn.btn_primary-color.btn_fontello(class='') Find Car
-        amp-date-countdown(end-date='2020-06-15T00:00:00.000Z', offset-seconds='-10', layout='fixed-height', height='auto')
-          template(type='amp-mustache')
-            H2.title-page.text-align-c.table-item 
-              | We are Open in
-              ul
-                li.btn-count.table-item
-                  | {{d}} Days
-                li.btn-count.table-item
-                  | {{h}} Hrs
-                li.btn-count.table-item
-                  | {{m}} Mins
-                li.btn-count.table-item
-                  | {{s}} Secs
-            +b.SECTION.section._infographic._bg-light-blue
-      .container.container_lg
-        +section-header({info: {title:"Carmazon “It’s Time to Buy”", model: "time-to-buy"}})._infographic
-          p Carmazon was created to address the concern of transparency and efficiency of the current status of an automotive transaction and to remove the adversarial component between retailer and consumer.
-
-      +e.infographic-container._right-car.container
-        +title-bg({info: {title:"The right car at the right price", class:"right-car"}})._float-left._margin-b-sm
-        p 
-          strong Carmazon 
-          | is a consumer-centered car buying platform which helps you to buy a quality motor vehicle at a fair price. Founded on the principles of 
-          strong reliability 
-          | and 
-          strong transparency, 
-          | Carmazon creates a more favorable relationship between retailer and consumer, and ensures you drive away the winner.
-
-
-    +b.SECTION.section._infographic-nostress
-      +e.infographic-container._nostress.container
-        +title-bg({info: {title:"Stress less"}})._float-right._transform-up
-        p 
-          strong Carmazon 
-          | utilizes proprietary technology to provide buyers with all of the relevant information related to their next car. This means 
-          strong no negotiation. 
-          | You will find an accurate price for any car, and the price you are quoted is the price you pay when you collect your car. Find a fair price for the car of your choice, as well as news of benefits, promotions and incentives.
-
-
-    +b.SECTION.section._infographic-nosurprises._bg-light-blue
-      +e.infographic-container._nosurprises.container
-        +title-bg({info: {title:"No surprises"}})._float-left._transform-up
-        p 
-          | Enjoy the feeling of 
-          strong hassle-free car buying. Carmazon 
-          | makes car dealers work for your business, and removes the uncertainty and chance previously associated with purchasing a new vehicle. Save time and energy as multiple, certified dealers send you price bids for the vehicle you want. You have the power.
-
-
-    +b.SECTION.section._infographic-moremoney
-      +e.infographic-container._moremoney.container
-        +title-bg({info: {title:"More money for you"}})._float-right._transform-up
-        p 
-          strong A dollar saved is a dollar earned. 
-          | You work hard for your money, and a car is one of the biggest single purchases you are likely to make. With 
-          strong 
-          | Carmazon you are guaranteed a 
-          strong fair deal 
-          | and 
-          strong more money in your pocket.
-
-
-    +b.SECTION.section._infographic-timenow._bg-light-blue
-      +e.infographic-container._timenow.container
-        +title-bg({info: {title:"The time is now"}})._float-left._transform-up
-        p 
-          strong It is time to buy. 
-          | Enjoy a positive and stress-free buying experience as the 
-          strong Carmazon 
-          | platform puts you at the center of the transaction and allows you to find the car you want at the price you deserve.
-
+    +b.SECTION.section._infographic._bg-green.container_img
 
     //- +b.SECTION.section._carousel-reviews._bg-light-blue._margin-b-lg
     //-   .container.container_lg
     //-     +section-header({info: {title:"Our Customer Saying", desc:""}})
     //-     include blocks/carousel-reviews 
-
-
-    +b.SECTION.section._partners._margin-b-md
-      .container.container_lg
-        +section-header({info: {title:"Our Partners", desc:""}})._margin-b-xs
-      .container
-        +e.partners-images
-          +e.AMP-IMG.partners-images-picture(src="img/kia-logo.png" alt="Kia" width="129" height="65" )
-          +e.AMP-IMG.partners-images-picture(src="img/Mazda_logo.png" alt="Mazda" width="77" height="71")
-          +e.AMP-IMG.partners-images-picture(src="img/toyota-ca-logo-l.png" alt="Toyota" width="100" height="80")
-          +e.AMP-IMG.partners-images-picture(src="img/Nissan.jpg" alt="Nissan" width="100" height="100" )
-          +e.AMP-IMG.partners-images-picture(src="img/Hundai.jpg" alt="Hundai" width="140" height="71" )
-          +e.AMP-IMG.partners-images-picture(src="img/honda.png" alt="Honda" width="130" height="91")
-
-
     include blocks/footer 

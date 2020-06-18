@@ -2,15 +2,20 @@
   &__title {
     padding-bottom: 10px;
     text-align: center;
+    margin-left: 11%;
+    margin-right: 11%;
   }
 
   &__desc {
-    color: #ababab;
-    line-height: 1.56;
-    max-width: 440px;
+    color: #ffffff;
+    line-height: 1.5;
+    max-width: 93%;
     margin: 0 auto;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 
   &_margin-b-xs {
