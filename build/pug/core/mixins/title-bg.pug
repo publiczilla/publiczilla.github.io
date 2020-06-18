@@ -1,0 +1,8 @@
+mixin title-bg (data)
+  +b.H3.title-bg&attributes(attributes)
+
+    if data.info.class && data.info.class === 'right-car'
+      +e.SPAN.text
+       | The right car #[br] at the right price
+    else
+      +e.SPAN.text= data.info.title

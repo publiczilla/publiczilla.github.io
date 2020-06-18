@@ -1,0 +1,14 @@
+mixin section-header(data)
+  +b.section-header&attributes(attributes)
+    if data.info.model &&  data.info.model === "time-to-buy"
+      +e.H2.title.text-transform-u
+        | Carmazon 
+        span.display-i-b “It’s Time to Buy”
+    else
+      +e.H2.title= data.info.title
+    +e.desc
+      if block
+        block
+
+
+

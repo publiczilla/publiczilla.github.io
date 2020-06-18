@@ -1,0 +1,192 @@
+.section {
+  &__title-page {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0 auto 20px auto;
+    max-width: 350px;
+  }
+
+  &__white-semicircle {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNzUiIGhlaWdodD0iNDAuMDY3IiB2aWV3Qm94PSIwIDAgMzc1IDQwLjA2NyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0wLDMuMjkxczkwLjE2LTI3LjIsMTgzLjkxLTI3LjJTMzc1LTIuMTg3LDM3NS0yLjE4N1YxNi4xNTZIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMjMuOTExKSIvPjwvc3ZnPg==);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    height: 42px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    @include media(">sm") {
+      height: 80px;
+    }
+  }
+
+  &__partners-images {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 490px;
+    margin: 0 auto;
+  }
+
+  &__partners-images-picture {
+    margin: 5px 10px;
+  }
+
+  &__infographic-container {
+    min-height: 385px;
+    max-width: 390px;
+
+    p {
+      color: #464547;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+  }
+
+  &__infographic-container_nostress {
+    background-image: url(img/infographic-nostress-section.png);
+    background-repeat: no-repeat;
+    background-position: -18px bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+
+    p {
+      max-width: 170px;
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &__infographic-container_nosurprises {
+    background-image: url(img/infographic-nosurprises-section.png);
+    background-repeat: no-repeat;
+    background-position: right -50px bottom 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 395px;
+    padding-bottom: 74px;
+
+    @include media(">sm") {
+      background-position: right -30px bottom 63px;
+    }
+
+    p {
+      max-width: 200px;
+    }
+  }
+
+  &__infographic-container_right-car {
+    background-image: url(img/infographic-rightcar-section.png);
+    background-repeat: no-repeat;
+    background-position: right 5px bottom;
+    min-height: 330px;
+
+    p {
+      max-width: 200px;
+    }
+  }
+
+  &__infographic-container_moremoney {
+    background-image: url(img/infographic-moremoney-section.png);
+    background-repeat: no-repeat;
+    background-position: left 5px bottom -54px;
+    min-height: 350px;
+    margin-bottom: 40px;
+
+    p {
+      max-width: 180px;
+    }
+  }
+
+  &__infographic-container_timenow {
+    background-image: url(img/infographic-timenow-section.png);
+    background-repeat: no-repeat;
+    background-position: right -16px bottom -54px;
+    min-height: 334px;
+    margin-bottom: 50px;
+
+    p {
+      max-width: 180px;
+    }
+  }
+
+  &_bg-light-blue {
+    background-color: $blueLight;
+  }
+
+  &_image {
+    background-color: #eaebee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 238px;
+  }
+
+  &_image-photo {
+    background-image: url(img/image-home-section.png);
+    background-position: center center;
+  }
+
+  &_image-infographics {
+    background-image: url(img/infographics-home-section.png);
+    background-position: center bottom 20px;
+
+    @include media(">sm") {
+      background-size: contain;
+      background-position: center bottom 60px;
+      height: 310px;
+    }
+  }
+
+  &_video {
+    // padding-top: 20px;
+  }
+
+  &_video-up {
+    margin-bottom: 10px;
+
+    @include media(">sm") {
+      top: -30px;
+    }
+    // top: -20px;
+  }
+
+  &_carousel-reviews,
+  &_infographic {
+    padding-top: 23px;
+  }
+
+  // &_padding-t-b-xl {
+  //   padding: 70px 0;
+  // }
+  // &_padding-t-b-lg {
+  //   padding: 60px 0;
+  // }
+  // &_padding-t-b-md {
+  //   padding: 50px 0;
+  // }
+  // &_padding-t-b-sm {
+  //   padding: 40px 0;
+  // }
+  // &_padding-t-b-xs {
+  //   padding: 30px 0;
+  // }
+
+  &_margin-b-xs {
+    margin-bottom: 30px;
+  }
+
+  &_margin-b-md {
+    margin-bottom: 50px;
+  }
+
+  &_margin-b-lg {
+    margin-bottom: 60px;
+  }
+}

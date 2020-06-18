@@ -1,0 +1,14 @@
+.sidebar-mobile {
+  background-color: #fff;
+  padding-top: 80px;
+  width: 280px;
+
+  &__close-btn {
+    color: #4a4a4a;
+    font-size: 28px;
+    position: absolute;
+    padding: 20px 24px;
+    right: 0;
+    top: 6px;
+  }
+}

@@ -1,0 +1,67 @@
+extends core/layout.pug
+block vars
+  - var pageTitle = 'article'
+  - var pageDescription = 'desc'
+  - var pageKeywords = 'keys words'
+  - var page = "article"
+  - var headerTheme = "dark-theme"
+ 
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._image._image-infographics.pos-relative
+      +e.SPAN.white-semicircle
+
+    +b.SECTION.section._infographic._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"Carmazon Blog"}})._infographic
+
+    +b.SECTION.section._infographic._margin-b-md._bg-light-blue
+      .container.container_lg
+        +section-header({info: {title:"Why Web-Based Car Buying is Necessary?"}})._float-left._margin-b-sm
+          p.text-align-l 2020-06-01
+          .container.container_lg.text-align-j
+            p.section_margin-b-md I recently helped my mother purchase a 2020 Toyota Rav4. From start to finish I found the process tedious and time consuming – and I work in the business!
+            | Last Friday my mother decided to replace her vehicle. First, she went to the local Toyota dealership to test drive the Rav4 – while I was at work. Later that day she called me, to say that would be her next vehicle. However, she did not feel comfortable purchasing without me present. We planned to lease it over 
+            strong four years using 24,000 kilometers per year. 
+            | The dealership had presented her with a highly inflated quote, and did not let her take it home. I was left to determine what price we were comfortable paying.
+            p.section_margin-b-md
+            | I opened a browser on my computer and went to Unhaggle. I determined the vehicle invoice price, and added another $500 – and decided this would be our payment. However, 
+            strong when I went to the dealership the transaction was not straightforward. 
+            | I sat for an hour finalizing the deal. Initially my offer was rejected and had to be modified before the manager agreed to it. The hassle continued later that week when we made changes to the contract. My mother did not want 24,000 kilometers per year but 20000.
+            p.section_margin-b-md
+            | We planned to lease it over four years using 24,000 kilometers per year. 
+            stroing The dealership had presented her with a highly inflated quote
+            | , and did not let her take it home. I was left to determine what price we were comfortable paying    
+            p.section_margin-b-md
+            strong I opened a browser on my computer
+            | and went to Unhaggle. I determined the vehicle invoice price, and added another $500 – and decided this would be our payment. However, when I went to the dealership the transaction was not straightforward. I sat for an hour finalizing the deal. 
+            strong Initially my offer was rejected and had to be modified before the manager agreed to it. 
+            | The hassle continued later that week when we made changes to the contract. My mother did not want 24,000 kilometers per year but 20000. Additionally, we did not want to purchase the excess wear package, because we would likely buy it out. The business manager inferred they might cancel the deal if I pulled the excess wear coverage, and did not relent until I told him I work in the business. 
+            strong This whole process took two to three hours!
+            p.section_margin-b-md
+            strong A web based purchasing solution would have solved this time consuming problem quickly. 
+            | After my mother had driven the vehicle, 
+            strong she could have selected the vehicle
+            | , colour, trim level and lease terms 
+            strong through the online portal. 
+            | Since the prices would already be pre-determined, there would be no purchase anxiety. The credit application and bill of sale could have been completed online, and the dealership would only be responsible for ensuring a seamless delivery. 
+            strong This would have saved hours
+            | , several uncomfortable conversations and improved the purchase experience.
+          p Which way would you rather do business?
+
+    +b.SECTION.section._partners._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"Our Partners"}})._margin-b-xs
+      .container
+        +e.partners-images
+          +e.AMP-IMG.partners-images-picture(src="img/kia-logo.png" alt="Kia" width="129" height="65" )
+          +e.AMP-IMG.partners-images-picture(src="img/Mazda_logo.png" alt="Mazda" width="77" height="71")
+          +e.AMP-IMG.partners-images-picture(src="img/toyota-ca-logo-l.png" alt="Toyota" width="100" height="80")
+          +e.AMP-IMG.partners-images-picture(src="img/Nissan.jpg" alt="Nissan" width="100" height="100" )
+          +e.AMP-IMG.partners-images-picture(src="img/Hundai.jpg" alt="Hundai" width="140" height="71" )
+          +e.AMP-IMG.partners-images-picture(src="img/honda.png" alt="Honda" width="130" height="91")
+
+    include blocks/footer 

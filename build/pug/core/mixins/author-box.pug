@@ -1,0 +1,6 @@
+mixin author-box(data)
+  +b.author-box&attributes(attributes)
+    +e.AMP-IMG.image(src = data.image.src, alt = data.author.name, width="60" height="60")
+    +e.CITE.info
+      +e.SPAN.name= data.author.name
+      +e.SPAN.job= data.author.job

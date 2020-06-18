@@ -1,0 +1,43 @@
+.title-bg {
+  display: flex;
+  position: relative;
+
+  span {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    background-color: $blueSecond;
+    font-size: 13px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 1.23;
+    max-width: 196px;
+    padding: 6px 25px;
+    text-transform: uppercase;
+  }
+
+  &_float-right {
+    justify-content: flex-end;
+    right: -10px;
+
+    @include media(">sm") {
+      right: -30px;
+    }
+  }
+
+  &_float-left {
+    left: -10px;
+
+    @include media(">sm") {
+      left: -30px;
+    }
+  }
+
+  &_transform-up {
+    transform: translateY(-50%);
+  }
+
+  &_margin-b-sm {
+    margin-bottom: 10px;
+  }
+}

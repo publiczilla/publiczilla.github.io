@@ -1,0 +1,19 @@
+if headerTheme === "dark-theme"
+  +b.HEADER.header._dark-theme
+    +e.SPAN.scroll-effect(id="header-scroll-effect")
+    +e.container.container 
+      +e.A.logo-link(href="https://www.google.com/")
+        +e.AMP-IMG.logo(id="whiteHeaderLogo" src="img/logo.png" alt="Carmazon" width="148" height="42")
+
+      +b.BUTTON.sandwich(type="button", on="tap:mainNavSidebar.toggle").clear-btn
+        +e.SPAN.sandwich-bar
+
+else
+  +b.HEADER.header
+    +e.SPAN.scroll-effect(id="header-scroll-effect")
+    +e.container.container 
+      +e.A.logo-link(href="https://www.google.com/")
+        +e.AMP-IMG.logo(src="img/logo-dark.png" alt="Carmazon" width="148" height="42")
+
+      +b.BUTTON.sandwich(type="button", on="tap:mainNavSidebar.toggle").clear-btn
+        +e.SPAN.sandwich-bar

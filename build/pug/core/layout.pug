@@ -1,0 +1,157 @@
+include ../bemto/bemto
+include   mixins
+
+doctype html
+html(amp lang="en")
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    title #{pageTitle}
+    meta(name='description', content= pageDescription)
+    meta(name='keywords', content= pageKeywords)
+    meta(property='og:title', content='CARMAZON “IT’S TIME TO BUY”')
+    meta(property='og:site_name', content='Carmazon')
+    meta(property='og:url', content='https://carmazonglobal.com/')
+    meta(property='og:description', content='Carmazon is a consumer-centered car buying platform which helps you to buy a quality motor vehicle at a fair price. Founded on the principles of reliability and transparency, ')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='https://carmazonglobal.com/img/infographic-nostress-section.png')
+    meta(property='og:image', content='https://carmazonglobal.com/img/logo.png')
+    meta(property='og:image', content='https://carmazonglobal.com/img/infographic-timenow-section.png')
+
+    if pageTitle === "index"
+      script(async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js")
+      script(type='application/ld+json').
+        {
+          "@context" : "http://schema.org",
+          "@type" : "LocalBusiness",
+          "name" : "Carmazon “It’s Time to Buy”",
+          "image" : "https://carmazonglobal.com/img/logo.png",
+          "url" : "https://carmazonglobal.com",
+          "review" : [ {
+          "@type" : "Review",
+            "reviewBody" : "The right car <BR/> at the right price"
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "Carmazon </STRONG>is a consumer-centered car buying platform which helps you to buy a quality motor vehicle at a fair price. Founded on the principles of <STRONG>reliability </STRONG>and <STRONG>transparency, </STRONG>Carmazon creates a more favorable relationship between retailer and consumer, and ensures you drive away the winner."
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "A dollar saved is a dollar earned. </STRONG>You work hard for your money, and a car is one of the biggest single purchases you are likely to make. With Carmazon you are guaranteed a <STRONG>fair deal </STRONG>and <STRONG>more money in your pocket."
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "It is time to buy. </STRONG>Enjoy a positive and stress-free buying experience as the <STRONG>Carmazon </STRONG>platform puts you at the center of the transaction and allows you to find the car you want at the price you deserve."
+          } ]
+        }
+    else if pageTitle === "Blog"
+      script(type='application/ld+json'). 
+        {
+          "@context" : "http://schema.org",
+          "@type" : "Article",
+          "name" : "Carmazon Blog",
+          "image" : "http://www.googleusercontent.com/imaginaryTeachingToolUrl",
+          "articleSection" : "Why Web-Based Car Buying is Necessary?",
+          "articleBody" : "I recently helped my mother purchase a 2020 Toyota Rav4. From start to finish I found the process tedious and time consuming – and I work in the business!..",
+          "url" : "https://carmazonglobal.com/"
+        }
+
+
+    // begin AMP Scripts
+    link(rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin)
+    script(async src="https://cdn.ampproject.org/v0.js")
+    script(async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js")
+    script(async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js")
+    script(async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js")
+    script(async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js")
+    script(async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js")
+    script(async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js")
+    script(async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js")
+    script(async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js")
+    script(async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js")
+    script(async custom-element="amp-live-list" src="https://cdn.ampproject.org/v0/amp-live-list-0.1.js")
+    script(async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js")
+    script(async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js")
+    script(async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js")
+    // end AMP Scripts
+
+    style(amp-custom)
+
+    link(href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700&display=swap" rel="stylesheet")
+    // begin Default Style. Do not touch 
+    | <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    // end Default Style. Do not touch 
+
+    link(rel="canonical" href="https://www.example.com/url/to/normal-page.html")
+    link(rel="shortcut icon" type="image/png" href="favicon.png")
+
+
+    // begin Add the following to the non-AMP page:
+    // link(rel="amphtml" href="https://www.example.com/url/to/amp/amp-page.html")
+    // end Add the following to the non-AMP page:
+  body
+    amp-analytics(type="googleanalytics")
+      script(type="application/json").
+        {
+          "vars": {
+            "account": "UA-162360669-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+
+    .top-anchor.pos-relative(id="top-anchor")
+      amp-position-observer(on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay")
+
+    block content
+
+
+
+    +b.AMP-SIDEBAR.sidebar-mobile.pos-relative(id="mainNavSidebar" layout="nodisplay" side="right")
+      +e.BUTTON.close-btn.clear-btn(type="button" on="tap:mainNavSidebar.close" tabindex="0") ✕
+      +b.NAV.nav-mobile
+        +e.UL.items.clear-list
+          +e.LI.item
+            +e.A.item-link(href="about.html") About Us
+          +e.LI.item
+            +e.A.item-link(href="blog.html") Blog
+          +e.LI.item
+            +e.A.item-link(href="contact.html") Contact Us
+
+    amp-animation(id="showAnim" layout="nodisplay")
+      script(type="application/json").
+        {
+          "duration": "200ms",
+          "fill": "both",
+          "iterations": "1",
+          "direction": "alternate",
+          "animations": [{
+            "selector": "#header-scroll-effect",
+            "keyframes": [{
+              "opacity": "1",
+              "visibility": "visible"
+            }]
+          }]
+        }
+    amp-animation(id="hideAnim" layout="nodisplay")
+      script(type="application/json").
+        {
+        "duration": "200ms",
+          "fill": "both",
+          "iterations": "1",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": "#header-scroll-effect",
+              "keyframes": [
+                { "opacity": "0", "visibility": "hidden" }
+              ]
+            }
+          ]
+        }
+
+
+    block scripts 

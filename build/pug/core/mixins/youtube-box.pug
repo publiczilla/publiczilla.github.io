@@ -1,0 +1,14 @@
+mixin youtube-box(data)
+  // begin Youtube-box
+  +b.youtube-box&attributes(attributes)
+    //- +e.AMP-YOUTUBE.player(id = data.video.videoId + "-id", data-videoid = data.video.videoId, width="358", height="204", layout="responsive")
+    //-   +e.AMP-IMG(src = data.image.src, placeholder, layout="fill")
+    //- +e.AMP-IMG.custom-placeholder(id = data.video.videoId + "-image", src = data.image.src, placeholder, layout="fill", on="tap:" + data.video.videoId + "-id.play," + data.video.videoId + "-image.hide", alt = data.image.alt, tabindex="0", role="button")
+
+    +e.AMP-VIDEO.player(id = data.video.videoId + "-id", width="358", height="204", layout="responsive", poster = data.image.src, controls)
+      source(src = data.video.src + ".webm", type="video/webm")
+      source(src = data.video.src + ".mp4", type="video/mp4")
+      div(fallback) This browser does not support the video element.
+    +e.AMP-IMG.custom-placeholder(id = data.video.videoId + "-image", src = data.image.src, placeholder, layout="fill", on="tap:" + data.video.videoId + "-image.hide," + data.video.videoId + "-id.play", alt = data.image.alt, tabindex="0", role="button")
+
+  // end Youtube-box

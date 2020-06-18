@@ -1,0 +1,52 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'About Us'
+  - var pageDescription = 'desc'
+  - var pageKeywords = 'keys words'
+  - var page = "About Us"
+  - var headerTheme = "dark-theme"
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._image._image-infographics.pos-relative
+      +e.SPAN.white-semicircle
+
+
+    +b.SECTION.section._infographic._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"About Us"}})._infographic
+          p 
+            | Welcome to  
+            strong Carmazon 
+            | the worlds most transparent, efficient and 
+            strong stress free  
+            | vehicle purchasing platform! 
+          p
+            | Our founders and board of directors have used decades of knowledge in automotive retail and technological innovation to give a truly revolutionary way to  
+            strong purchase your next vehicle. 
+          
+    +b.SECTION.section._infographic._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"What do we do"}})._infographic
+          p 
+            strong Incredible savings 
+            | and NO Need to negotiate EVER!!! Get ready for a game changing buying expirience from any device, anyehere, anytime garunteed. We are happy you have selected Carmazon! 
+            strong "It's Time Too Buy!!" 
+
+    +b.SECTION.section._partners._margin-b-mb
+      .container.container_lg
+        +section-header({info: {title:"Our Partners"}})._margin-b-xs
+      .container
+        +e.partners-images
+          +e.AMP-IMG.partners-images-picture(src="img/kia-logo.png" alt="Kia" width="129" height="65" )
+          +e.AMP-IMG.partners-images-picture(src="img/Mazda_logo.png" alt="Mazda" width="77" height="71")
+          +e.AMP-IMG.partners-images-picture(src="img/toyota-ca-logo-l.png" alt="Toyota" width="100" height="80")
+          +e.AMP-IMG.partners-images-picture(src="img/Nissan.jpg" alt="Nissan" width="100" height="100" )
+          +e.AMP-IMG.partners-images-picture(src="img/Hundai.jpg" alt="Hundai" width="140" height="71" )
+          +e.AMP-IMG.partners-images-picture(src="img/honda.png" alt="Honda" width="130" height="91")
+
+    include blocks/footer 

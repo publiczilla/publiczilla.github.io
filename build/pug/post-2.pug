@@ -1,0 +1,86 @@
+extends core/layout.pug
+block vars
+  - var pageTitle = 'article'
+  - var pageDescription = 'desc'
+  - var pageKeywords = 'keys words'
+  - var page = "article"
+  - var headerTheme = "dark-theme"
+ 
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._image._image-infographics.pos-relative
+      +e.SPAN.white-semicircle
+
+    +b.SECTION.section._infographic._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"Carmazon Blog"}})._infographic
+
+    +b.SECTION.section._infographic._margin-b-md._bg-light-blue
+      .container.container_lg
+        +section-header({info: {title:"There’s a simple truth when it comes to dealership marketing"}})._float-left._margin-b-sm
+          p.text-align-l 2020-04-20
+          .container.container_lg.text-align-j
+            p.section_margin-b-md You will not see sustained long-term growth in car purchases if you are depending only on walk-ins, large advertising banners, or television commercials. The battle for your customers will not be won with grand gestures, but with customer micro-moments and touchpoints.
+            p.section_margin-b-md A slam dunk one-size-fits-all single method for turning leads into buyers does not exist. According to Google, on average, 
+            strong customers engage in over 900 digital interactions with a dealership before they make a purchase.
+            p.section_margin-b-md So, what does this information tell us? Your dealership marketing strategy needs to include multiple digital marketing touchpoints to reach your audience throughout their customer journey.
+            p.section_margin.b.md Mapping the typical car buyer’s customer journey. A recent Google study highlighted the various touchpoints that typically happen during the average car-buying journey. 
+            p.section_margin.b.md Here are a few critical touchpoints and customer micro-moments:
+            ol
+              li.table-item
+                strong Awareness:
+                p Searched on Google
+                | Asked family, friends, and coworkers
+                | Influenced by online ad
+              li.table-item
+                strong Interest:
+                p Browsed newspaper ads
+                | Watched video on YouTube
+                | Searched on mobile
+                | Read professional review
+                | Located a dealer from mobile
+                | Visited dealer website
+                | Requested a quote online
+              li.table-item
+                strong Decision:
+                p Filled out a form
+                | Visited dealership
+              li.table-item
+                strong Action:
+                p Test drove a vehicle
+            ul
+              p This report also outlines three critical concepts:
+              ul
+                li.table-item
+                  p Out of the 24 touchpoints mentioned in the original study, 19 are digital.
+                li.table-item
+                  p An in-person touchpoint is the result of multiple — as much as ten — digital customer micro-moments.
+                li.table-item
+                  p Ultimately, your dealership marketing strategy needs to include a variety of digital tools that can facilitate several online interactions.
+                li.table-item 
+                  p Aligning your dealership marketing to each part of the customer journey
+            p.section_margin.b.md All touchpoints and dealership marketing tactics are not created equal. Each part of the buyer journey corresponds to specific interactions. For example, paid ads, Google searches, and a test-drive YouTube video 
+            strong work better in the awareness stage 
+            | since these dealership marketing tactics will likely be among the first marketing channels buyers encounter. 
+            p.section_margin.b.md On the other hand, actions that require effort on the customer’s part — like following the dealership on social media, or reading a product review — shows developing interest. 
+            strong That’s why these initiatives should be positioned
+            | in a way that carries customers from the ‘awareness’ stage on to ‘interest.’
+            p.section_margin.b.md Each marketing tactic has a purpose, and your goal is to figure out what it is and how this impacts your audience at each stage in the customer journey.
+
+
+    +b.SECTION.section._partners._margin-b-md
+      .container.container_lg
+        +section-header({info: {title:"Our Partners"}})._margin-b-xs
+      .container
+        +e.partners-images
+          +e.AMP-IMG.partners-images-picture(src="img/kia-logo.png" alt="Kia" width="129" height="65" )
+          +e.AMP-IMG.partners-images-picture(src="img/Mazda_logo.png" alt="Mazda" width="77" height="71")
+          +e.AMP-IMG.partners-images-picture(src="img/toyota-ca-logo-l.png" alt="Toyota" width="100" height="80")
+          +e.AMP-IMG.partners-images-picture(src="img/Nissan.jpg" alt="Nissan" width="100" height="100" )
+          +e.AMP-IMG.partners-images-picture(src="img/Hundai.jpg" alt="Hundai" width="140" height="71" )
+          +e.AMP-IMG.partners-images-picture(src="img/honda.png" alt="Honda" width="130" height="91")
+
+    include blocks/footer 

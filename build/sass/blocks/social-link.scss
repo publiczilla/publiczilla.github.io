@@ -1,0 +1,19 @@
+.social-link {
+  align-items: center;
+  background-color: #010209;
+  border-radius: 3px;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  transition: all 0.3s;
+  width: 40px;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &__icon {
+    fill: #fff;
+    width: 20px;
+  }
+}

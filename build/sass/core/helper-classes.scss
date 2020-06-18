@@ -1,0 +1,102 @@
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.success {
+  color: $success;
+}
+
+.align-i-s {
+  align-items: flex-start;
+}
+
+.align-i-e {
+  align-items: flex-end;
+}
+
+.align-i-c {
+  align-items: center;
+}
+
+.display-f {
+  display: flex;
+}
+
+.display-i-b {
+  display: inline-block;
+}
+
+.container-z {
+  position: relative;
+  z-index: 1;
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.flex-dir-c {
+  flex-direction: column;
+}
+
+.float-r {
+  float: right;
+}
+
+.justify-c-s-b {
+  justify-content: space-between;
+}
+
+.justify-c-e {
+  justify-content: flex-end;
+}
+
+.justify-c-c {
+  justify-content: center;
+}
+
+.img-full-width {
+  height: auto;
+  width: 100%;
+}
+
+.table-item {
+  padding-top: 23px;
+}
+.pos-relative {
+  position: relative;
+}
+
+.text-align-c {
+  text-align: center;
+}
+
+.text-align-j {
+  text-align: justify;
+}
+
+.text-align-l {
+  text-align: justify;
+}
+
+.text-transform-u {
+  text-transform: uppercase;
+}

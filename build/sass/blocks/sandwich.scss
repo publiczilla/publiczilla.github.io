@@ -1,0 +1,44 @@
+.sandwich {
+  background-color: $blue;
+  border-radius: 3px;
+  height: 46px;
+  position: relative;
+  width: 50px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__sandwich-bar {
+    background-color: #fff;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+
+    .sandwich_theme_close & {
+      background-color: transparent;
+    }
+
+    &:before,
+    &:after {
+      background-color: #fff;
+      content: "";
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    &:before {
+      top: -9px;
+    }
+
+    &:after {
+      bottom: -9px;
+    }
+  }
+}
