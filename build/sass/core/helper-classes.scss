@@ -51,6 +51,9 @@
 .dark-h{
   color: #152231;
 }
+.dark-b{
+  color: #000000;
+}
 .display-block {
   display: block;
 }
@@ -99,20 +102,21 @@
   margin-left: 10%;
   margin-right: 10%;
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 700;
 }
 .step-sub{
   margin-left: 10%;
   margin-right: 10%;
+  line-height: 1.8;
   font-size: 1.8em;
-  font-weight: 600;
+  font-weight: 700;
 }
 .step-p{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 9%;
+  margin-right: 9%;
   line-height: 1.8;
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 .text-align-c {
   text-align: center;

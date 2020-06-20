@@ -4,7 +4,7 @@ block vars
   - var pageTitle = 'index'
   - var pageDescription = 'desc'
   - var pageKeywords = 'keys words'
-  - var page = "Carmazon.ca"
+  - var page = "index"
   - var headerTheme = "dark-theme"
 
 block content
@@ -20,14 +20,10 @@ block content
     
     +b.SECTION.section._infographic
       .container.container_bt
-        +btn({info:{type: "link", data: "post-1.html", text: "1 - Crash Testing the Market"}})._primary-color._margin_b_top
-        +btn({info:{type: "link", data: "post-1.html", text: "2 - Developing the MVP"}})._primary-color._margin_b_top
-        +btn({info:{type: "link", data: "post-1.html", text: "3 - Soft Launch to Secure Funding"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "index2.html#step-1", text: "1 - Crash Testing the Market"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "index2.html#step-2", text: "2 - Developing the MVP"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "index2.html#step-3", text: "3 - Soft Launch to Secure Funding"}})._primary-color._margin_b_top
 
     +b.SECTION.section._infographic._home-2
 
-    //- +b.SECTION.section._carousel-reviews._bg-light-blue._margin-b-lg
-    //-   .container.container_lg
-    //-     +section-header({info: {title:"Our Customer Saying", desc:""}})
-    //-     include blocks/carousel-reviews 
     include blocks/footer 
