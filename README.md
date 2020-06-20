@@ -1,4 +1,4 @@
-# Carmazon
+# PublicZilla
 
 AMP-html template. Used by Pug, Sass, Gulp.
 
@@ -23,11 +23,6 @@ AMP-html template. Used by Pug, Sass, Gulp.
 
 - AMP is friendly with markup [Schema.org](https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery#use-schema.org-for-most-search-engines), some possible bonuses are also promised in the output results, [more detailed](https://developers.google.com/search/docs/guides/about-amp).
 
-## About building a project
-
-- The build files are located in the build folder, and the finished production files are located in the dist folder.
-- For HTML, Pug is used, and for CSS, SCSS is used. The project is built using Gulp.
-- The project code has a commented section with reviews: [link](https://bit.ly/39ymSP5)
 
 ### Launch of the project
 

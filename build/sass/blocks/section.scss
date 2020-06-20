@@ -5,21 +5,19 @@
     line-height: 1.2;
     margin: 0 auto 20px auto;
     max-width: 350px;
+    
   }
 
-  &__partners-images {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 490px;
-    margin: 0 auto;
+  &__step-img {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 6%;
   }
-
-  &__partners-images-picture {
-    margin: 5px 10px;
+  &__step-img-w {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
   }
-
   &__infographic-container {
     min-height: 385px;
     max-width: 390px;
@@ -30,143 +28,39 @@
       line-height: 1.5;
     }
   }
-
-  &__infographic-container_nostress {
-    background-image: url(img/infographic-nostress-section.png);
-    background-repeat: no-repeat;
-    background-position: -18px bottom;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-
-    p {
-      max-width: 170px;
-      margin: 0 0 0 auto;
-    }
-  }
-
-  &__infographic-container_nosurprises {
-    background-image: url(img/infographic-nosurprises-section.png);
-    background-repeat: no-repeat;
-    background-position: right -50px bottom 63px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 395px;
-    padding-bottom: 74px;
-
-    @include media(">sm") {
-      background-position: right -30px bottom 63px;
-    }
-
-    p {
-      max-width: 200px;
-    }
-  }
-
-  &__infographic-container_right-car {
-    background-image: url(img/infographic-rightcar-section.png);
-    background-repeat: no-repeat;
-    background-position: right 5px bottom;
-    min-height: 330px;
-
-    p {
-      max-width: 200px;
-    }
-  }
-
-  &__infographic-container_moremoney {
-    background-image: url(img/infographic-moremoney-section.png);
-    background-repeat: no-repeat;
-    background-position: left 5px bottom -54px;
-    min-height: 350px;
-    margin-bottom: 40px;
-
-    p {
-      max-width: 180px;
-    }
-  }
-
-  &__infographic-container_timenow {
-    background-image: url(img/infographic-timenow-section.png);
-    background-repeat: no-repeat;
-    background-position: right -16px bottom -54px;
-    min-height: 334px;
-    margin-bottom: 50px;
-
-    p {
-      max-width: 180px;
-    }
-  }
-
-  &_bg-light-blue {
-    background-color: $blueLight;
-  }
-
   &_bg-blue {
     background-color: #28405a;
   }
   &_bg-green {
     background-color: #12ab51;
   }
-  &_image {
-    background-color: #eaebee;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 238px;
-  }
-
-  &_image-photo {
-    background-image: url(img/image-home-section.png);
+  &_home-1 {
+    background-image: linear-gradient(to right, #142b44d9, #142b44d9),url('img/background-home-1.jpg');
     background-position: center center;
+    background-size: cover;
   }
-
-  &_image-infographics {
-    background-image: url(img/infographics-home-section.png);
-    background-position: center bottom 20px;
-
-    @include media(">sm") {
-      background-size: contain;
-      background-position: center bottom 60px;
-      height: 310px;
-    }
+  &_home-2 {
+    background-image: url('img/background-home-2.png');
+    background-position: center center;
+    background-size: cover;
+    height:465px;
   }
-
-  &_video {
-    // padding-top: 20px;
+  &_step-1-back {
+    background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5%;
   }
-
-  &_video-up {
-    margin-bottom: 10px;
-
-    @include media(">sm") {
-      top: -30px;
-    }
-    // top: -20px;
+  &_step-3-back {
+    background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-3.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5%;
   }
-
-  &_carousel-reviews,
-  &_infographic {
-    padding-top: 23px;
+  &_step-white {
+    background-color: #ffffff;
+    padding-bottom: 5%;
   }
-
-  // &_padding-t-b-xl {
-  //   padding: 70px 0;
-  // }
-  // &_padding-t-b-lg {
-  //   padding: 60px 0;
-  // }
-  // &_padding-t-b-md {
-  //   padding: 50px 0;
-  // }
-  // &_padding-t-b-sm {
-  //   padding: 40px 0;
-  // }
-  // &_padding-t-b-xs {
-  //   padding: 30px 0;
-  // }
 
   &_margin-b-xs {
     margin-bottom: 30px;

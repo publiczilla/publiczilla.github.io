@@ -1,5 +1,5 @@
 {
-  "name": "carmazon",
+  "name": "publiczilla",
   "version": "1.0.0",
   "description": "AMP-html template. Used by Pug, Sass, Gulp.",
   "main": "gulpfile.js",
