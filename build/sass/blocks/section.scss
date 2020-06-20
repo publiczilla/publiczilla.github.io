@@ -17,7 +17,8 @@
   }
 
   &__partners-images-picture {
-    margin: 5px 10px;
+    margin-right: 16%;
+    margin-left: 15%;
   }
 
   &__infographic-container {
@@ -122,6 +123,12 @@
     background-position: center center;
     background-size: cover;
     height:465px;
+  }
+  &_step-1-back {
+    background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height:835px;
   }
   &_image-infographics {
     background-image: url(img/infographics-home-section.png);

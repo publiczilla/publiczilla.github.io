@@ -13,7 +13,7 @@
   &_lg {
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 10%;
+    padding-top: 5%;
     margin-top: 10%;
     padding-bottom: 5%
   }
@@ -21,13 +21,15 @@
     padding-bottom: 1%;
     text-align: center;
   }
+  &_step-1 {
+    background-image: url(img/step-1.png);
+    background-repeat: no-repeat;
+    background-position: right 5px bottom;
+    min-height: 330px;
+  }
   &_img {
     padding-bottom: 1%;
     height: 460px
-  }
-  &_img-txt {
-    padding-bottom: 1%;
-    height: 820px
   }
   &_foot {
     width: 45%
