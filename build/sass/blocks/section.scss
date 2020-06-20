@@ -5,6 +5,7 @@
     line-height: 1.2;
     margin: 0 auto 20px auto;
     max-width: 350px;
+    
   }
 
   &__partners-images {
@@ -14,11 +15,14 @@
     justify-content: center;
     max-width: 490px;
     margin: 0 auto;
+    
   }
 
-  &__partners-images-picture {
-    margin-right: 16%;
-    margin-left: 15%;
+  &__step-img {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: -7%;
+    margin-bottom: 11%;
   }
 
   &__infographic-container {
