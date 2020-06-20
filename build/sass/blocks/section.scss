@@ -8,16 +8,6 @@
     
   }
 
-  &__partners-images {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 490px;
-    margin: 0 auto;
-    
-  }
-
   &__step-img {
     margin-left: 20%;
     margin-right: 10%;
@@ -38,84 +28,8 @@
       line-height: 1.5;
     }
   }
-
-  &__infographic-container_nostress {
-    background-image: url(img/infographic-nostress-section.png);
-    background-repeat: no-repeat;
-    background-position: -18px bottom;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-
-    p {
-      max-width: 170px;
-      margin: 0 0 0 auto;
-    }
-  }
-
-  &__infographic-container_nosurprises {
-    background-image: url(img/infographic-nosurprises-section.png);
-    background-repeat: no-repeat;
-    background-position: right -50px bottom 63px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 395px;
-    padding-bottom: 74px;
-
-    @include media(">sm") {
-      background-position: right -30px bottom 63px;
-    }
-
-    p {
-      max-width: 200px;
-    }
-  }
-
-  &__infographic-container_right-car {
-    background-image: url(img/infographic-rightcar-section.png);
-    background-repeat: no-repeat;
-    background-position: right 5px bottom;
-    min-height: 330px;
-
-    p {
-      max-width: 200px;
-    }
-  }
-
-  &__infographic-container_moremoney {
-    background-image: url(img/infographic-moremoney-section.png);
-    background-repeat: no-repeat;
-    background-position: left 5px bottom -54px;
-    min-height: 350px;
-    margin-bottom: 40px;
-
-    p {
-      max-width: 180px;
-    }
-  }
-
-  &__infographic-container_timenow {
-    background-image: url(img/infographic-timenow-section.png);
-    background-repeat: no-repeat;
-    background-position: right -16px bottom -54px;
-    min-height: 334px;
-    margin-bottom: 50px;
-
-    p {
-      max-width: 180px;
-    }
-  }
-
-  &_bg-light-blue {
-    background-color: $blueLight;
-  }
-
   &_bg-blue {
     background-color: #28405a;
-    opacity: 0.5;
   }
   &_bg-green {
     background-color: #12ab51;
@@ -147,50 +61,6 @@
     background-color: #ffffff;
     padding-bottom: 5%;
   }
-  &_image-infographics {
-    background-image: url(img/infographics-home-section.png);
-    background-position: center bottom 20px;
-
-    @include media(">sm") {
-      background-size: contain;
-      background-position: center bottom 60px;
-      height: 310px;
-    }
-  }
-
-  &_video {
-    // padding-top: 20px;
-  }
-
-  &_video-up {
-    margin-bottom: 10px;
-
-    @include media(">sm") {
-      top: -30px;
-    }
-    // top: -20px;
-  }
-
-  &_carousel-reviews,
-  &_infographic {
-    padding-top: 23px;
-  }
-
-  // &_padding-t-b-xl {
-  //   padding: 70px 0;
-  // }
-  // &_padding-t-b-lg {
-  //   padding: 60px 0;
-  // }
-  // &_padding-t-b-md {
-  //   padding: 50px 0;
-  // }
-  // &_padding-t-b-sm {
-  //   padding: 40px 0;
-  // }
-  // &_padding-t-b-xs {
-  //   padding: 30px 0;
-  // }
 
   &_margin-b-xs {
     margin-bottom: 30px;

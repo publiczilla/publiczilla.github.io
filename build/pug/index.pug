@@ -2,7 +2,7 @@ extends core/layout.pug
 
 block vars
   - var pageTitle = 'index'
-  - var pageDescription = 'desc'
+  - var pageDescription = 'des'
   - var pageKeywords = 'keys words'
   - var page = "index"
   - var headerTheme = "dark-theme"
@@ -11,11 +11,9 @@ block content
   .main-wrapper.pos-relative
     include blocks/header 
  
-
-
     +b.SECTION.section._infographic._home-1
       .container.container_lg
-        +section-header({info: {title:"We convert ideas to revenues"}})._float-left._margin-b-sm.text-align-l
+        +section-header({info: {title:"We convert ideas to revenues"}})._float-left._margin-b-sm.text-align-j
           p PublicZilla is on a mission to support talented creators to bring value to society in North America,through purpose-driven solutions that bring innovation, help spur growth for entrepreneursand disrupt their respective industry.
     
     +b.SECTION.section._infographic

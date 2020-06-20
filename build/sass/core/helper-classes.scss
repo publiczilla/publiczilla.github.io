@@ -22,10 +22,6 @@
   align-items: center;
 }
 
-.display-f {
-  display: flex;
-}
-
 .display-i-b {
   display: inline-block;
 }
@@ -61,21 +57,8 @@
 .flex-dir-c {
   flex-direction: column;
 }
-
-.float-r {
-  float: right;
-}
-
 .justify-c-s-b {
   justify-content: space-between;
-}
-
-.justify-c-e {
-  justify-content: flex-end;
-}
-
-.justify-c-c {
-  justify-content: center;
 }
 
 .img-full-width {
@@ -83,9 +66,6 @@
   width: 100%;
 }
 
-.table-item {
-  padding-top: 23px;
-}
 .top-padd{
   padding-top: 23px;
 }
@@ -123,10 +103,6 @@
 }
 
 .text-align-j {
-  text-align: justify;
-}
-
-.text-align-l {
   text-align: justify;
 }
 
