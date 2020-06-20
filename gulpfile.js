@@ -123,6 +123,17 @@ gulp.task("watch", () => {
     }
   });
 
+  browserSync2.init({
+    server: {
+      baseDir: "./dist",
+      index: "index2.html"
+    },
+    port: 3012,
+    ui: {
+      port: 3013
+    }
+  });
+
 
   gulp.watch("./build/pug/**/*.pug", gulp.series("pug", "sass", "inject"));
   gulp.watch("./build/sass/**/*.scss", gulp.series("pug", "sass", "inject"));

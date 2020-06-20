@@ -107,22 +107,22 @@
 
   &_bg-blue {
     background-color: #28405a;
+    opacity: 0.5;
   }
   &_bg-green {
     background-color: #12ab51;
   }
-  &_image {
-    background-color: #eaebee;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 238px;
-  }
-
-  &_image-photo {
-    background-image: url(img/image-home-section.png);
+  &_home-1 {
+    background-image: linear-gradient(to right, #142b44d9, #142b44d9),url('img/background-home-1.jpg');
     background-position: center center;
+    background-size: cover;
   }
-
+  &_home-2 {
+    background-image: url('img/background-home-2.png');
+    background-position: center center;
+    background-size: cover;
+    height:465px;
+  }
   &_image-infographics {
     background-image: url(img/infographics-home-section.png);
     background-position: center bottom 20px;

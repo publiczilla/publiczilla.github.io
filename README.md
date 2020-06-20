@@ -1,4 +1,4 @@
-# Carmazon
+# PublicZilla
 
 AMP-html template. Used by Pug, Sass, Gulp.
 
