@@ -1,0 +1,12 @@
+mixin btn(box)
+  if box.info.type === "link"
+    +b.A.btn(href= box.info.data ? box.info.data : false)&attributes(attributes)
+      if block
+        block
+      +e.SPAN.text= box.info.text
+
+  else if box.info.type === "btn"
+    +b.BUTTON.btn(type= box.info.data)&attributes(attributes)
+      if block
+        block
+      +e.SPAN.text= box.info.text

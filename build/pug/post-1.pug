@@ -1,0 +1,57 @@
+extends core/layout.pug
+block vars
+  - var pageTitle = 'Blog'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "Blog"
+  - var headerTheme = "dark-theme"
+ 
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._infographic
+      .container.container_lg
+        h2._float-left._margin-b-sm.text-align-c.dark-h Welcome to the new era!
+
+    +b.SECTION.section._infographic._margin-b-mdsection._infographic._bg-blue
+      .container.container_btx
+        +section-header({info: {}})._float-left._margin-b-md.text-align-j
+          p.text-align-j 2020-03-31
+          p.text-align-j There is no longer any doubt that we live in a world where all aspects of the economy
+            | are being reinvented by major leaps and bounds, opening up a wide spectrum of new
+            | opportunities for creators, driven by the ambition to innovate and disrupt. And such is the
+            | starting point for each entrepreneurial journey aiming to evolve in a context shaped
+            | essentially by constant change and historical socio-economic challenges that actually
+            | make our era unique.
+        +section-header({info: {title:"Story of a Disruption"}})._float-left._margin-b-md.text-align-j
+          p.text-align-j And with each disruptive entrepreneurial path
+            | come challenges that stand in the way of ambition,
+            | challenges that can sometimes shake faith and lead
+            | the project to failure, regardless of its creative value
+            | and potential to succeed in the market. This is
+            | where a journey of a thousand frustrations can take
+            | place, due to the failure of a prototype that is
+            | dragging on, the inability to grasp the ins and outs
+            | of the market, or the difficulty to raise funds.
+        +section-header({info: {title:"Disruption is the new obvious!"}})._float-left._margin-b-md.text-align-j
+          p.text-align-j We usually tend to forget that disruption is hardly embraced. Instead,
+            | resistance is the natural response to changes that challenge existing
+            | systems, which we can compare to that comfort zone in us extremely
+            | hard to leave.
+          p.text-align-j.top-paddx Most disruptive ideas are first perceived as ridiculous and bohemian
+            | from a business perspective, it takes a lot of wisdom and resilience
+            | before they reach the stage of serious perception, and then move on
+            | to the obvious.
+          p.text-align-j.top-paddx When it comes to entrepreneurship, it's not about how genius the
+            | idea shows up, but rather how insightful the business study was built
+            | up, the reliability of the business plan, and the effectiveness the
+            | network that will help the project evolve in influential business circles.
+          p.text-align-j.top-paddx These are the questions to ask if the objective is to move disruption to
+            | a position were it is perceived to be obvious. The Holy Grail.
+        
+    
+
+
+    include blocks/footer 

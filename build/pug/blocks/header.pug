@@ -1,0 +1,12 @@
+if headerTheme === "dark-theme"
+  +b.HEADER.header
+    +e.SPAN.scroll-effect(id="header-scroll-effect")
+    +e.container.container 
+
+      +b.BUTTON.sandwich(type="button", on="tap:mainNavSidebar.toggle").clear-btn
+        +e.SPAN.sandwich-bar
+
+      +e.A.logo-link(href="index.html")
+        +e.AMP-IMG.logo(id="whiteHeaderLogo" src="img/logo-template.png" alt="PublicZilla" width="22vw" height="7.3vw")
+
+      

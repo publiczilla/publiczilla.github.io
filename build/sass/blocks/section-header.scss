@@ -1,0 +1,29 @@
+.section-header {
+  &__title {
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+
+  &__desc {
+    color: #ffffff;
+    line-height: 1.5;
+    max-width: 93%;
+    margin: 0 auto;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  &_margin-b-xs {
+    margin-bottom: 10px;
+  }
+
+  &_margin-b-md {
+    margin-bottom: 10vw;
+  }
+}

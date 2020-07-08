@@ -1,0 +1,151 @@
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.success {
+  color: $success;
+}
+
+.align-i-s {
+  align-items: flex-start;
+}
+
+.align-i-e {
+  align-items: flex-end;
+}
+
+.align-i-c {
+  align-items: center;
+}
+
+.display-i-b {
+  display: inline-block;
+}
+
+.container-z {
+  position: relative;
+  z-index: 1;
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  top: 1vw;
+  width: 11vw;
+  display: block;
+  position: fixed;
+  height: 11vw;
+}
+
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dark-h{
+  color: #152231;
+}
+.dark-b{
+  color: #000000;
+}
+.display-block {
+  display: block;
+}
+
+.flex-dir-c {
+  flex-direction: column;
+}
+.justify-c-s-b {
+  justify-content: space-between;
+}
+
+.img-full-width {
+  height: auto;
+  width: 100%;
+}
+
+.top-padd{
+  padding-top: 2vw;
+}
+.top-paddx{
+  padding-top: 4vw;
+}
+.h-bold {
+  font-weight: 600;
+}
+.pos-relative {
+  position: relative;
+}
+.step{
+  color:#ffffff;
+}
+.step-title{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 7vw;
+  font-weight: 700;
+}
+.step-sub{
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.8;
+  font-size: 6vw;
+  font-weight: 700;
+}
+.port-sub{
+  font-size: 6vw;
+  font-weight: 400;
+  color:#152231;
+}
+.port-p{
+  line-height: 5.8vw;
+  font-size: 4vw;
+  font-weight: 300;
+  text-align: justify;
+  color:#909498;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.port-p::after {
+  margin-top: 20vw;
+  position: absolute;
+  content: "";
+  width: 30vw;
+  height: 0.2vw;
+  background: #152231;
+  left: 2%;
+}
+.step-p{
+  margin-left: 9%;
+  margin-right: 9%;
+  line-height: 1.8;
+  font-size: 4vw;
+  font-weight: 400;
+}
+.text-align-c {
+  text-align: center;
+}
+.text-align-c-m {
+  text-align: center;
+  margin-bottom: 8%;
+}
+.text-align-j {
+  text-align: justify;
+}
+
+.text-transform-u {
+  text-transform: uppercase;
+}
+div.i-amphtml-lbg-mask  {
+  background: rgba(0,0,0,.8) !important;
+}

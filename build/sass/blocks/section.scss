@@ -1,0 +1,99 @@
+.section {
+  &__title-page {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0 auto 20px auto;
+    max-width: 350px;
+    
+  }
+  &__step-img {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 6%;
+  }
+  &__step-img-w {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+  }
+  &__port-img {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 50vw;
+    margin-bottom: 6%;
+  }
+  &__infographic-container {
+    min-height: 385px;
+    max-width: 390px;
+
+    p {
+      color: #464547;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+  }
+  &_bg-blue {
+    background-color: #28405a;
+  }
+  &_bg-green {
+    background-color: #12ab51;
+  }
+  &_home-1 {
+    background-image: linear-gradient(to right, #142b44d9, #142b44d9),url('img/background-home-1.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  &_home-2 {
+    background-image: url('img/background-home-2.png');
+    background-position: center center;
+    background-size: cover;
+    height:70vw;
+  }
+  &_step-1-back {
+    background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5%;
+    padding-top:15%;
+  }
+  &_step-3-back {
+    background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-3.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5%;
+    padding-top:15%;
+  }
+  &_step-white {
+    background-color: #ffffff;
+    padding-bottom: 5%;
+    padding-top:15%;
+  }
+
+  &_port-white {
+    background-color: #ffffff;
+    padding-bottom: 30%;
+  }
+  &_our-cli {
+    padding-bottom: 10%;
+  }
+  &__best-c{
+    float: left;
+    width: 50%;
+    height: 6vw;
+    width: 20vw;
+    margin-top: 13%;
+    margin-left: 18%;
+  }
+  &_margin-b-xs {
+    margin-bottom: 30px;
+  }
+
+  &_margin-b-md {
+    margin-bottom: 50px;
+  }
+
+  &_margin-b-lg {
+    margin-bottom: 60px;
+  }
+}

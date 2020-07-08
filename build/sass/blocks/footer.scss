@@ -1,0 +1,35 @@
+// begin Footer
+.footer {
+  background-color: #b7c0c9;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 34px 0 26px 0;
+
+  &__logo-link {
+    display: block;
+    margin: 10px auto 10px;
+    width: 100%;
+  }
+  &__social {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  &__social-item {
+    margin-right: 2vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__copy {
+    color: #ababab;
+    text-align: center;
+  }
+}
+// end Footer

@@ -1,0 +1,97 @@
+.icon-st {
+  fill: #ffcc03;
+}
+.link-a {
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  display: block;
+}
+.social-yt {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 2vw;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+  background-color: #ee3130;
+  fill: white;
+}
+
+.social-ig {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+  background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),-webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+  background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  fill: white;
+}
+
+.social-in {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+  background-color: #1586b0;
+  fill: white;
+}
+.social-link {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &__icon {
+    fill: #fff;
+    width: 20px;
+  }
+  &__icon-fb {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    fill: #3e68c0;
+    background-color: white;
+  }
+  &__icon-tw {
+    padding: 1vw;
+    fill: #ffffff;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background-color: #23abff;
+  }
+
+}
