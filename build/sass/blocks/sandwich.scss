@@ -1,0 +1,47 @@
+.sandwich {
+  height: 11vw;
+  position: fixed;
+  width: 11vw;
+  top: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__sandwich-bar {
+    border-radius: 24px;
+    background-color: #010101;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 7vw;
+
+    .sandwich_theme_close & {
+      background-color: transparent;
+    }
+
+    &:before,
+    &:after {
+      border-radius: 24px;
+      background-color: #010101;
+      content: "";
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 6.8vw;
+    }
+
+    &:before {
+      top: -2vw;
+    }
+
+    &:after {
+      bottom: -2vw;
+    }
+  }
+}

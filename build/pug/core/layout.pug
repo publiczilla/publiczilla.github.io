@@ -1,0 +1,144 @@
+include ../bemto/bemto
+include   mixins
+
+doctype html
+html(amp lang="en")
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    title #{pageTitle}
+    meta(name='description', content= pageDescription)
+    meta(name='keywords', content= pageKeywords)
+    meta(property='og:title', content='PublicZilla')
+    meta(property='og:site_name', content='PublicZilla')
+    meta(property='og:url', content='https://PublicZilla.com/')
+    meta(property='og:description', content='is on a mission to support talented creators to bring value to society in North America,through purpose-driven solutions that bring innovation, help spur growth for entrepreneursand disrupt their respective industry.')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='https://PublicZilla.com/img/img/logo-template.png')
+
+    if pageTitle === "index"
+      script(type='application/ld+json').
+        {
+          "@context" : "http://schema.org",
+          "@type" : "LocalBusiness",
+          "name" : "Carmazon “It’s Time to Buy”",
+          "image" : "https://PublicZilla.com/img/logo-template.png",
+          "url" : "https://PublicZilla.com",
+          "review" : [ {
+          "@type" : "Review",
+            "reviewBody" : "We crash test to check if it survives. Identify your market and validate the need for your product. Conduct FGDs, user interviews, and digital media campaigns. Gather valuable insights and verify disruption of industry. All of this even before going to market!"
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "We help you to start building. Build a solid foundation using first-hand research and data analysis. Bootstrap funding to raise money for development of MVP Fine-tune your concept to perfection."
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "3 - Launch We’re ready to launch. Develop GOTO Market strategy for full launch Bring in industry experts and investors to raise funding Add additional features and upscale the platform Raise the stakes by taking things global"
+          }, {
+            "@type" : "Review",
+            "reviewBody" : "We never stop evolving. Each stage goes through the iterative process of Create, Engage, and Adapt Laser –focus on creating what the customer wants Constant engagement with the market to ensure that we evolve with it Adapting to feedback in real-time to ensure competitive edge"
+          } ]
+        }
+
+    // begin AMP Scripts
+    link(rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin)
+    script(async src="https://cdn.ampproject.org/v0.js")
+    script(async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js")
+    script(async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js")
+    script(async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js")
+    script(async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js")
+    script(async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js")
+    script(async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js")
+    script(async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js")
+    script(async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js")
+    script(async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js")
+    script(async custom-element="amp-live-list" src="https://cdn.ampproject.org/v0/amp-live-list-0.1.js")
+    script(async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js")
+    script(async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js")
+    script(async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js")
+    script(async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js")
+    // end AMP Scripts
+     
+    style(amp-custom)
+
+    link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,500,600,700&display=swap" rel="stylesheet")
+    // begin Default Style. Do not touch 
+    | <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    // end Default Style. Do not touch 
+
+    link(rel="canonical" href="https://www.example.com/url/to/normal-page.html")
+    link(rel="shortcut icon" type="image/png" href="favicon.png")
+
+
+    // begin Add the following to the non-AMP page:
+    // link(rel="amphtml" href="https://www.example.com/url/to/amp/amp-page.html")
+    // end Add the following to the non-AMP page:
+  body
+    amp-analytics(type="googleanalytics")
+      script(type="application/json").
+        {
+          "vars": {
+            "account": "UA-162360669-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+
+    .top-anchor.pos-relative(id="top-anchor")
+      amp-position-observer(on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay")
+
+    block content
+
+
+
+    +b.AMP-SIDEBAR.sidebar-mobile.pos-relative(id="mainNavSidebar" layout="nodisplay" side="right")
+      +e.BUTTON.close-btn.clear-btn(type="button" on="tap:mainNavSidebar.close" tabindex="0") ✕
+      +b.NAV.nav-mobile
+        +e.UL.items.clear-list
+          +e.LI.item
+            +e.A.item-link(href="portfolio.html") Portfolio
+          +e.LI.item
+            +e.A.item-link(href="about.html") About Us
+          +e.LI.item
+            +e.A.item-link(href="blog.html") Blog
+          +e.LI.item
+            +e.A.item-link(href="contact.html") Contact Us
+
+    amp-animation(id="showAnim" layout="nodisplay")
+      script(type="application/json").
+        {
+          "duration": "200ms",
+          "fill": "both",
+          "iterations": "1",
+          "direction": "alternate",
+          "animations": [{
+            "selector": "#header-scroll-effect",
+            "keyframes": [{
+              "opacity": "1",
+              "visibility": "visible"
+            }]
+          }]
+        }
+    amp-animation(id="hideAnim" layout="nodisplay")
+      script(type="application/json").
+        {
+        "duration": "200ms",
+          "fill": "both",
+          "iterations": "1",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": "#header-scroll-effect",
+              "keyframes": [
+                { "opacity": "0", "visibility": "hidden" }
+              ]
+            }
+          ]
+        }
+
+    block scripts 

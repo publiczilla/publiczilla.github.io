@@ -1,0 +1,33 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'Contact Us'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "Contact Us"
+  - var headerTheme = "dark-theme"
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+    +b.SECTION.section._infographic._bg-blue
+      .container.container_lg
+        +section-header({info: {title:"Contact Us"}})
+        .container
+          +b.FORM.find-car-box(method="post" action-xhr="#" target="_top")
+            +b.INPUT.form-box(type='text',name="fullname", placeholder='Full name',required)._margin-b-xs-2
+            +b.INPUT.form-box(type='email',name="email", placeholder='example@domain.com',required)._margin-b-xs-2
+            +b.INPUT.form-box(type='text',name="message", placeholder='Type your message')._margin-b-xs-2
+            +btn({info:{type: "btn", data: "submit", text: "Send"}})._primary-color._fontello._full-width
+            .container.top-padd.text-align-c
+              div(submit-success='')
+                +e.TEMPLATE(type="amp-mustache")
+                  | Message sent successfully!
+              div(submit-error='')
+                +e.TEMPLATE(type="amp-mustache")
+                  | Something is wrong...
+
+
+
+    include blocks/footer 

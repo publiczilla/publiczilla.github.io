@@ -1,0 +1,58 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'index2'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "index2"
+  - var headerTheme = "dark-theme"
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header 
+ 
+    +b.SECTION.section._infographic
+      .container.container_lg
+        h2._float-left._margin-b-sm.text-align-c.dark-h In Disruption We Trust
+         
+    +b.SECTION.section._infographic._step-1-back(id="step-1")
+      +e.AMP-IMG.step-img(src="img/step-1.png" alt="step 1"  width="1" height="1" layout="responsive" )
+      .container
+        h1.step.step-title 1 - Crash Testing
+        h2.step.step-sub We crash test to check if it survives.
+        p.step.step-p Identify your market and validate the need for your product. 
+          | Conduct FGDs, user interviews, and digital media campaigns. 
+          | Gather valuable insights and verify disruption of industry. 
+        p.step.step-p All of this even before going to market! 
+      
+    +b.SECTION.section._infographic._step-white(id="step-2")
+      +e.AMP-IMG.step-img-w(src="img/step-2.png" alt="step 2" width="1" height="1" layout="responsive" )
+      .container.dark-b
+        h1.step-title 2 – Developing the MVP
+        h2.step-sub.dark-b We help you to start building.
+        p.step-p Build a solid foundation using first-hand research and data analysis.
+        p.step-p Bootstrap funding to raise money for development of MVP 
+          | Fine-tune your concept to perfection 
+    
+    +b.SECTION.section._infographic._step-3-back(id="step-3")
+      +e.AMP-IMG.step-img(src="img/step-3.png" alt="step 3"  width="1" height="1" layout="responsive" )
+      .container.dark-b
+        h1.step-title 3 - Launch
+        h2.step-sub.dark-b We’re ready to launch.
+        p.step-p Develop GOTO Market strategy for full launch 
+        p.step-p Bring in industry experts and investors to raise funding 
+        p.step-p Add additional features and upscale the platform 
+        p.step-p Raise the stakes by taking things global
+    
+    +b.SECTION.section._infographic._step-white(id="step-4")
+      +e.AMP-IMG.step-img-w(src="img/step-4.png" alt="step 4" width="1" height="1" layout="responsive" )
+      .container.dark-b
+        h1.step-title 4 - Create. Test. Adapt.
+        h2.step-sub.dark-b We never stop evolving.
+        p.step-p Each stage goes through the iterative process of Create, Engage, and Adapt 
+        p.step-p Laser –focus on creating what the customer wants
+        p.step-p Constant engagement with the market to ensure that we 
+        p.step-p evolve with it
+        p.step-p Adapting to feedback in real-time to ensure competitive edge
+
+    include blocks/footer 

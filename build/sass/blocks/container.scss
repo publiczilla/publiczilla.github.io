@@ -1,0 +1,42 @@
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+
+  @include media(">sm") {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &_lg {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8%;
+    margin-top: 12vw;
+    padding-bottom: 5%
+  }
+  &_bt {
+    padding-bottom: 1%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  &_btx {
+    padding-bottom: 8%;
+    text-align: center;
+  }
+  &_step-1 {
+    background-image: url(img/step-1.png);
+    background-repeat: no-repeat;
+    background-position: right 5px bottom;
+    min-height: 330px;
+  }
+  &_img {
+    padding-bottom: 1%;
+    height: 460px
+  }
+  &_foot {
+    width: 30%
+  }
+}

@@ -1,0 +1,79 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'About Us'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "About Us"
+  - var headerTheme = "dark-theme"
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+    +b.SECTION.section._infographic._step-white
+      .container.dark-b
+        h1.step-title.text-align-c-m The Mission
+        h2.step-sub.dark-b What We're Up To
+        p.step-p PublicZilla’s mission is to support talented creators to bring value to
+          | society in #geographical area, through purpose-driven solutions that
+          | bring innovation, help spur growth for entrepreneurs
+          | First, we help entrepreneurs ask the right questions in order to study
+          | the market, the product’s marketing potential and requirements for a
+          | successful launch.
+    
+    +b.SECTION.section._infographic._step-1-back
+      .container
+        h1.step.step-title.text-align-c-m The Vision
+        h2.step.step-sub What We Dream the Business To Be
+        p.step.step-p Diverse, effective and reliable entrepreneurial ecosystem
+          | that empowers disruptive business ideas and gives them
+          | a chance to generate revenues.
+    
+    +b.SECTION.section._infographic._step-white
+      .container.dark-b
+        h1.step-title.text-align-c-m Our Values
+        h2.step-sub.dark-b What Guides Us For A Disruption That Creates Real Value
+        p.step-p ENGAGEMENT
+        p.step-p  INNOVATION
+        p.step-p  GROWTH
+        p.step-p  ETHICS
+
+    
+    +b.SECTION.section._infographic._step-white
+      .container.dark-b
+        h1.step-title.text-align-c-m Founding Team
+        h2.step-sub.dark-b Tarique
+        p.step-p Tariq Ansari is the Digital Business Leader, IT Innovator & Business Enabler.
+          | He has extensive experience in building Market Disrupting Products such a
+          | Mobile Wallet for Enstream LP a joint Venture between Rogers, Telus and Bell.
+          | He worked as Ninja IT Consultant for various fortune 500 companies such as
+          | FedEX, Cisco, Verisign and Startups alike. Equipped with a Bachelor in
+          | Computer Science & Engineering Degree and various Certifications & awards
+          | such Gem of Tcs award, Advanced Computing from C-DAC, most recent being
+          | a certificate from MIT Boston on Machine Learning and IoT. He has been
+          | Eating, Drinking and Sleeping emerging technologies since he started a career
+          | as a Ninja Software Developer working in Global Technology Consulting
+          | Companies. Most recently he is busy disrupting Automotive industry by
+          | introducing future of Car Buying, a mobile based, Desktop Optimized platform
+          | called Carmazon. Tarique is certified member of OACETT (Ontario Association
+          | of Certified Engineering Technicians and Technologists).
+    
+    +b.SECTION.section._infographic._step-white
+      .container.dark-b  
+        h2.step-sub.dark-b Nasik
+        p.step-p Nasik is a data science expert with a proven track record of creating innovative
+          | data-backed growth strategies for several organizations. His data consultancy
+          | experience extends into industries such as Technology, Healthcare, Tourism,
+          | Utilities, Education and Non-Profit. Having worked with Hubspot, Nasik is also an
+          | expert in Inbound and Outbound Marketing having helped clients like Nunavut
+          | Tourism, City of Kingston, Klipfolio, I-Sight and Fusebill shatter their leads
+          | targets. Nasik is also a proud alumnus of the University of Waterloo, an institution
+          | known for its startup and entrepreneurial culture around the world. He has a rich
+          | and vast network of entrepreneurs and industry experts under his belt which he
+          | taps into for creative insights for his clients. Presently, he is living his dream of
+          | helping entrepreneurs succeed by providing them with an international platform
+          | to grow.
+         
+
+    include blocks/footer 

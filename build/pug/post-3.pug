@@ -1,0 +1,33 @@
+extends core/layout.pug
+block vars
+  - var pageTitle = 'Blog'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "Blog"
+  - var headerTheme = "dark-theme"
+ 
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._infographic
+      .container.container_lg
+        h2._float-left._margin-b-sm.text-align-c.dark-h Founding Story
+
+    +b.SECTION.section._infographic._margin-b-mdsection._infographic._bg-blue
+      .container.container_btx
+        +section-header({info: {}})._float-left._margin-b-md.text-align-j
+          p.text-align-j 2020-03-31
+          p.text-align-j PublicZilla is the story of two passionate entrepreneurs, Tarique and Nasik, who
+            | enjoyed spending their friendship time on long discussions about their successes
+            | and failures in business, talks in which they re-imagined the entrepreneurial
+            | mindset, how to boost disruptive businesses, how they managed to overcome the
+            | difficulties that challenged their projects and managed to bring their ideas to life.
+            | These friendly and intense discussions have naturally led to a common passion for
+            | which they joined forces since 2019, so that they devote their passion to helping
+            | shape the world they aspire for, a world where innovative businesses are
+            | empowered to flourish through effective business management, sustained through
+            | a solid entrepreneurial network they are willing to match with innovators.
+
+    include blocks/footer 

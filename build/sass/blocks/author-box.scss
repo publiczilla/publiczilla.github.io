@@ -1,0 +1,25 @@
+.author-box {
+  display: flex;
+  justify-content: center;
+
+  &__image {
+    margin-right: 15px;
+  }
+
+  &__info {
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  &__job {
+    color: #ababab;
+    font-size: 14px;
+  }
+}

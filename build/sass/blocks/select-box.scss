@@ -1,0 +1,52 @@
+.select-box {
+  display: block;
+  font-size: 16px;
+  color: #ababab;
+  line-height: 1.3;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  border: solid 1px #dddddd;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: all 0.3s;
+  height: 60px;
+
+  background-color: $blueLight;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy4xOTYiIGhlaWdodD0iMTAuNjE4IiB2aWV3Qm94PSIwIDAgMTcuMTk2IDEwLjYxOCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2FiYWJhYjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMS4wMjEsMTEuNzYsMTcuNiwxOC4zMjNsNi41NzctNi41NjNMMjYuMiwxMy43ODFsLTguNiw4LjZMOSwxMy43ODFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOSAtMTEuNzYpIi8+PC9zdmc+");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.8em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+
+  &:hover {
+    border-color: #c2c2c2;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border-color: #cccccc;
+    box-shadow: 0 0 1px 1px rgba(0, 175, 239, 0.7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  option {
+    font-weight: normal;
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.4;
+  }
+
+  &_margin-b-xs-2 {
+    margin-bottom: 15px;
+  }
+}

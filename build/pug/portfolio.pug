@@ -1,0 +1,41 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'index2'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "index2"
+  - var headerTheme = "dark-theme"
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header 
+ 
+    +b.SECTION.section._infographic
+      .container.container_lg
+        h2._float-left._margin-b-sm.text-align-c.dark-h Portfolio
+         
+    +b.SECTION.section._infographic._port-white
+      +e.AMP-IMG.port-img.bg(src="img/carmazon.jpg" alt="CARMAZON"  width="1" height="1" layout="responsive" on='tap:my-lightbox' lightbox)
+      .container
+        h1.step.port-sub CARMAZON
+        h2.step.port-p Was created to address the concern of transparency and efficiency of the current status of an automotive transaction and to remove the adversarial component between retailer and consumer.
+    
+    +b.SECTION.section._infographic._port-white
+      +e.AMP-IMG.port-img(lightbox src="img/moderncar.jpg" alt="MODERCARSBROKERAGE"  width="1" height="1" layout="responsive" )
+      .container
+        h1.step.port-sub MODERCARSBROKERAGE
+        h2.step.port-p Let’s face the fact that a new vehicle purchase is a huge expense for some the costliest item they will purchase, and it’s not even an investment! modern car brokerage members purchase their vehicles because they want a fair deal.
+    
+    +b.SECTION.section._infographic._port-white
+      +e.AMP-IMG.port-img(lightbox src="img/techy.jpg" alt="SERVICETECHY"  width="1" height="1" layout="responsive" )
+      .container
+        h1.step.port-sub SERVICETECHY
+        h2.step.port-p WE PROVIDE THE BEST APP for your mobile devices.Get plenty of technician jobs & also get technical services done for your house or office in just one click.
+    +b.SECTION.section._infographic._our-cli
+      h2._float-left._margin-b-sm.text-align-c.dark-h OUR BEST CLIENTS
+      .container.row
+        +e.AMP-IMG.best-c(src="img/carmazon-logo.png" alt="CARMAZON"  width="1" height="1" layout="responsive" )
+        +e.AMP-IMG.best-c(src="img/techy-logo.png" alt="SERVICETECHY"  width="1" height="1" layout="responsive" )
+
+    include blocks/footer 

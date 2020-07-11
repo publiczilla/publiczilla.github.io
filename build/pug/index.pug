@@ -1,0 +1,28 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'index'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "index"
+  - var headerTheme = "dark-theme"
+
+
+block content
+  .main-wrapper.pos-relative
+    include blocks/header 
+ 
+    +b.SECTION.section._infographic._home-1
+      .container.container_lg
+        +section-header({info: {title:"We convert ideas to revenues"}})._float-left._margin-b-sm.text-align-j
+          p PublicZilla is on a mission to support talented creators to bring value to society in North America,through purpose-driven solutions that bring innovation, help spur growth for entrepreneursand disrupt their respective industry.
+    
+    +b.SECTION.section._infographic.container_bt
+      .container.container_bt
+        +btn({info:{type: "link", data: "index2.html#step-1", text: "1 - Crash Testing the Market"}})._primary-color._margin_b_top#scroll
+        +btn({info:{type: "link", data: "index2.html#step-2", text: "2 - Developing the MVP"}})._primary-color._margin_b_top
+        +btn({info:{type: "link", data: "index2.html#step-3", text: "3 - Soft Launch to Secure Funding"}})._primary-color._margin_b_top
+
+    +b.SECTION.section._infographic._home-2
+
+    include blocks/footer 

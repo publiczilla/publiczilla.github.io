@@ -1,0 +1,56 @@
+extends core/layout.pug
+block vars
+  - var pageTitle = 'Blog'
+  - var pageDescription = 'des'
+  - var pageKeywords = 'keys words'
+  - var page = "Blog"
+  - var headerTheme = "dark-theme"
+ 
+block content
+  .main-wrapper.pos-relative
+    include blocks/header
+
+
+    +b.SECTION.section._infographic
+      .container.container_lg
+        h2._float-left._margin-b-sm.text-align-c.dark-h The Work Process
+
+    +b.SECTION.section._infographic._margin-b-mdsection._infographic._bg-blue
+      .container.container_btx
+        +section-header({info: {}})._float-left._margin-b-md.text-align-j
+          p.text-align-j 2020-03-31
+          p.text-align-j An established team and a business network developed with stakeholders involved in each of the
+            | project's stages. Our support consists of end-to-end mentoring, including the feasibility study,
+            | MVP development, fund raising and marketing strategy, with the aim to provide concrete support
+            | and high added value expertise.
+
+        +section-header({info: {title:"Business Study"}})._float-left._margin-b-md.text-align-j
+          p.text-align-j We first validate the necessity of the product by
+            | understanding the particularities of the market. To
+            | this end, we set up user interviews and online
+            | communication campaigns assessing customer
+            | interests and the nature of feedbacks, in addition to
+            | all the technical tests necessary to approve the
+            | validity of the solution.
+
+        +section-header({info: {title:"MVP Development"}})._float-left._margin-b-md.text-align-j
+          p.text-align-j Raise funds to develop the solution as an MVP
+            | (Minimum Viable Product), which is a version of a
+            | product with just enough features to satisfy early
+            | customers and provide feedback for future product
+            | Re-development
+        
+        +section-header({info: {title:"Go To Market"}})._float-left._margin-b-md.text-align-j
+          p.text-align-j Once the MVP is developed, we work on the
+            | marketing strategy, involving investors to
+            | help launch the product smoothly. The fund
+            | is used for operations, marketing and
+            | redevelopment of the solution with
+            | adaptations decided during the testing
+            | phases. The overall objective is to develop its
+            | features as well as reaching the profit point
+            | required for the project to be viable. At this
+            | stage, our support covers also the launch of
+            | the solution in other foreign markets.
+
+    include blocks/footer 
