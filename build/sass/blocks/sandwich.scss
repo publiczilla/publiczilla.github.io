@@ -1,7 +1,7 @@
 .sandwich {
-  height: 11vw;
+  height: 41px;
   position: fixed;
-  width: 11vw;
+  width: 41px;
   top: 0;
 
   &:focus {
@@ -17,7 +17,7 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 7vw;
+    width: 25px;
 
     .sandwich_theme_close & {
       background-color: transparent;
@@ -33,15 +33,15 @@
       position: absolute;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
-      width: 6.8vw;
+      width: 25px;
     }
 
     &:before {
-      top: -2vw;
+      top: -8px;
     }
 
     &:after {
-      bottom: -2vw;
+      bottom: -8px;
     }
   }
 }

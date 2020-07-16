@@ -14,7 +14,7 @@ block content
     +b.SECTION.section._infographic._bg-blue
       .container.container_lg
         +section-header({info: {title:"Contact Us"}})
-        .container
+        .container.container_form
           +b.FORM.find-car-box(method="post" action-xhr="#" target="_top")
             +b.INPUT.form-box(type='text',name="fullname", placeholder='Full name',required)._margin-b-xs-2
             +b.INPUT.form-box(type='email',name="email", placeholder='example@domain.com',required)._margin-b-xs-2
