@@ -11,17 +11,20 @@
     margin-left: 20%;
     margin-right: 10%;
     margin-bottom: 6%;
+    max-width: 450px;
   }
   &__step-img-w {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    max-width: 450px;
   }
   &__port-img {
     margin-left: 2%;
     margin-right: 2%;
     height: 40vw;
     margin-bottom: 6%;
+    max-width: 450px;
   }
   &__infographic-container {
     min-height: 385px;
@@ -56,19 +59,19 @@
     background-position: center center;
     background-size: cover;
     padding-bottom: 5%;
-    padding-top:15%;
+    padding-top:50px;
   }
   &_step-3-back {
     background-image: linear-gradient(to right, #0b9843de, #0b9843de),url('img/background-step-3.jpg');
     background-position: center center;
     background-size: cover;
     padding-bottom: 5%;
-    padding-top:15%;
+    padding-top:50px;
   }
   &_step-white {
     background-color: #ffffff;
     padding-bottom: 5%;
-    padding-top:15%;
+    padding-top:50px;
   }
 
   &_port-white {
